@@ -14,10 +14,3 @@ Simple front-end flashcard quiz app built with HTML, CSS, and JavaScript. Data i
 2. Open `index.html` in your browser (no server required)
 3. Create a deck, add cards, and press "Start Quiz" to test yourself
 
-## Run on GitHub Pages
-1. Create a new repo on GitHub.
-2. Upload the project files or push via git.
-3. In your repo settings -> Pages, choose the `main` branch and root directory to publish.
-
-## License
-MIT License
