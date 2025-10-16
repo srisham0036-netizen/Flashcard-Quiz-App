@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Flashcard Quiz App</h1>
+    <p>Study with digital flashcards — create decks, add cards, and quiz yourself.</p>
+  </header>
+
+  <main class="container">
+    <section class="left">
+      <h2>Decks</h2>
+      <div class="deck-controls">
+        <input id="new-deck-name" placeholder="New deck name" />
+        <button id="create-deck">Create Deck</button>
+      </div>
+      <ul id="deck-list" class="list"></ul>
+    </section>
+
+    <section class="center">
+      <h2 id="deck-title">Select or create a deck</h2>
+
+      <div id="card-form" class="card-form hidden">
+        <input id="question" placeholder="Question / Term" />
+        <input id="answer" placeholder="Answer / Definition" />
+        <button id="add-card">Add Card</button>
+      </div>
+
+      <div id="cards-area" class="cards-area"></div>
+    </section>
+
+    <section class="right">
+      <h2>Quiz</h2>
+      <div class="quiz-controls">
+        <button id="start-quiz" disabled>Start Quiz</button>
+        <button id="reset-progress" disabled>Reset Progress</button>
+      </div>
+      <div id="quiz-area" class="quiz-area hidden">
+        <div id="quiz-card" class="quiz-card">Press Start</div>
+        <div id="quiz-actions" class="quiz-actions hidden">
+          <button id="show-answer">Show Answer</button>
+          <button id="correct">Correct</button>
+          <button id="incorrect">Incorrect</button>
+        </div>
+        <div id="quiz-score" class="quiz-score"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Built with ❤️ — stores data locally (localStorage)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

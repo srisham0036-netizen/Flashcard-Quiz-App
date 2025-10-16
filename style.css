@@ -1,0 +1,38 @@
+
+:root{
+  --bg:#f6f8fa; --card:#fff; --muted:#666; --accent:#2563eb;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#0f172a;line-height:1.4}
+header{padding:24px 32px;background:linear-gradient(90deg,#fff,#f1f5f9);box-shadow:0 1px 0 rgba(0,0,0,0.05)}
+header h1{margin:0 0 6px;font-size:20px}
+.container{display:flex;gap:20px;padding:20px;max-width:1100px;margin:20px auto}
+.left,.center,.right{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.05)}
+.left{flex:0 0 220px}
+.center{flex:1}
+.right{flex:0 0 300px}
+
+input{padding:8px 10px;border-radius:8px;border:1px solid #e6eef8;background:#fff;margin-right:6px;width:100%}
+button{padding:8px 10px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+button.secondary{background:#64748b}
+
+.list{list-style:none;padding:0;margin-top:12px;max-height:420px;overflow:auto}
+.list li{padding:8px;border-radius:8px;display:flex;justify-content:space-between;align-items:center;border:1px solid #eef2ff;margin-bottom:8px;cursor:pointer}
+.list li.active{background:linear-gradient(90deg,#eef2ff,#f8fafc);border-color:#c7ddff}
+.deck-controls{display:flex;gap:8px}
+
+.card-form{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.cards-area{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef2ff;position:relative}
+.card .qa{min-height:56px}
+.card .small{font-size:12px;color:var(--muted)}
+.card .card-actions{display:flex;gap:6px;position:absolute;right:8px;top:8px}
+
+.quiz-area{margin-top:12px}
+.quiz-card{padding:18px;border-radius:12px;min-height:80px;display:flex;align-items:center;justify-content:center;font-weight:600}
+.quiz-actions{display:flex;gap:8px;margin-top:8px}
+.hidden{display:none}
+
+footer{padding:12px;text-align:center;color:var(--muted)}
